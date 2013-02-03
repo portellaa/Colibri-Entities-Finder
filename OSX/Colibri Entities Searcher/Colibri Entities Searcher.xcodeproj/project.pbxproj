@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BEC6F4C16BDDCA20066D334 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */; };
+		1BEC6F5616BDDCA20066D334 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BEC6F5416BDDCA20066D334 /* InfoPlist.strings */; };
+		1BEC6F5816BDDCA20066D334 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC6F5716BDDCA20066D334 /* main.m */; };
+		1BEC6F5C16BDDCA20066D334 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1BEC6F5A16BDDCA20066D334 /* Credits.rtf */; };
+		1BEC6F5F16BDDCA20066D334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC6F5E16BDDCA20066D334 /* AppDelegate.m */; };
+		1BEC6F6216BDDCA30066D334 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEC6F6016BDDCA30066D334 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BEC6F4816BDDCA20066D334 /* Colibri Entities Searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colibri Entities Searcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1BEC6F4E16BDDCA20066D334 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1BEC6F4F16BDDCA20066D334 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1BEC6F5016BDDCA20066D334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1BEC6F5316BDDCA20066D334 /* Colibri Entities Searcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colibri Entities Searcher-Info.plist"; sourceTree = "<group>"; };
+		1BEC6F5516BDDCA20066D334 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1BEC6F5716BDDCA20066D334 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BEC6F5916BDDCA20066D334 /* Colibri Entities Searcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colibri Entities Searcher-Prefix.pch"; sourceTree = "<group>"; };
+		1BEC6F5B16BDDCA20066D334 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1BEC6F5D16BDDCA20066D334 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1BEC6F5E16BDDCA20066D334 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BEC6F6116BDDCA30066D334 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BEC6F4516BDDCA20066D334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEC6F4C16BDDCA20066D334 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BEC6F3F16BDDCA20066D334 = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F5116BDDCA20066D334 /* Colibri Entities Searcher */,
+				1BEC6F4A16BDDCA20066D334 /* Frameworks */,
+				1BEC6F4916BDDCA20066D334 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BEC6F4916BDDCA20066D334 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F4816BDDCA20066D334 /* Colibri Entities Searcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BEC6F4A16BDDCA20066D334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */,
+				1BEC6F4D16BDDCA20066D334 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BEC6F4D16BDDCA20066D334 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F4E16BDDCA20066D334 /* AppKit.framework */,
+				1BEC6F4F16BDDCA20066D334 /* CoreData.framework */,
+				1BEC6F5016BDDCA20066D334 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1BEC6F5116BDDCA20066D334 /* Colibri Entities Searcher */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F5D16BDDCA20066D334 /* AppDelegate.h */,
+				1BEC6F5E16BDDCA20066D334 /* AppDelegate.m */,
+				1BEC6F6016BDDCA30066D334 /* MainMenu.xib */,
+				1BEC6F5216BDDCA20066D334 /* Supporting Files */,
+			);
+			path = "Colibri Entities Searcher";
+			sourceTree = "<group>";
+		};
+		1BEC6F5216BDDCA20066D334 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F5316BDDCA20066D334 /* Colibri Entities Searcher-Info.plist */,
+				1BEC6F5416BDDCA20066D334 /* InfoPlist.strings */,
+				1BEC6F5716BDDCA20066D334 /* main.m */,
+				1BEC6F5916BDDCA20066D334 /* Colibri Entities Searcher-Prefix.pch */,
+				1BEC6F5A16BDDCA20066D334 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BEC6F4716BDDCA20066D334 /* Colibri Entities Searcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Searcher" */;
+			buildPhases = (
+				1BEC6F4416BDDCA20066D334 /* Sources */,
+				1BEC6F4516BDDCA20066D334 /* Frameworks */,
+				1BEC6F4616BDDCA20066D334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Colibri Entities Searcher";
+			productName = "Colibri Entities Searcher";
+			productReference = 1BEC6F4816BDDCA20066D334 /* Colibri Entities Searcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BEC6F4016BDDCA20066D334 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Brindigrafica;
+			};
+			buildConfigurationList = 1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Searcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BEC6F3F16BDDCA20066D334;
+			productRefGroup = 1BEC6F4916BDDCA20066D334 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BEC6F4716BDDCA20066D334 /* Colibri Entities Searcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BEC6F4616BDDCA20066D334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEC6F5616BDDCA20066D334 /* InfoPlist.strings in Resources */,
+				1BEC6F5C16BDDCA20066D334 /* Credits.rtf in Resources */,
+				1BEC6F6216BDDCA30066D334 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BEC6F4416BDDCA20066D334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEC6F5816BDDCA20066D334 /* main.m in Sources */,
+				1BEC6F5F16BDDCA20066D334 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BEC6F5416BDDCA20066D334 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BEC6F5516BDDCA20066D334 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1BEC6F5A16BDDCA20066D334 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BEC6F5B16BDDCA20066D334 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1BEC6F6016BDDCA30066D334 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BEC6F6116BDDCA30066D334 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BEC6F6316BDDCA30066D334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1BEC6F6416BDDCA30066D334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1BEC6F6616BDDCA30066D334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Colibri Entities Searcher/Colibri Entities Searcher-Prefix.pch";
+				INFOPLIST_FILE = "Colibri Entities Searcher/Colibri Entities Searcher-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BEC6F6716BDDCA30066D334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Colibri Entities Searcher/Colibri Entities Searcher-Prefix.pch";
+				INFOPLIST_FILE = "Colibri Entities Searcher/Colibri Entities Searcher-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Searcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEC6F6316BDDCA30066D334 /* Debug */,
+				1BEC6F6416BDDCA30066D334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Searcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEC6F6616BDDCA30066D334 /* Debug */,
+				1BEC6F6716BDDCA30066D334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BEC6F4016BDDCA20066D334 /* Project object */;
+}
