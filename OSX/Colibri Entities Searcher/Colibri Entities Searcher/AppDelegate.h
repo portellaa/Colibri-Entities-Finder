@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "SPMySQL.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
@@ -17,5 +18,7 @@
 @property (assign) IBOutlet NSTextField *clientNumberLabel;
 
 @property (assign) IBOutlet NSTableView *resultTableView;
+
+- (IBAction)textInputed:(id)sender;
 
 @end

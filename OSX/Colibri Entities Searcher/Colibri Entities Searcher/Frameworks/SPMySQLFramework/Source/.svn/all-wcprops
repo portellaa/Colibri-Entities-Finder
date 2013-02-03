@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3901/trunk/Frameworks/SPMySQLFramework/Source
+END
+SPMySQLConnectionProxy.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLConnectionProxy.h
+END
+SPMySQLConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3895/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLConnection.m
+END
+SPMySQLStringAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLStringAdditions.h
+END
+SPMySQLFastStreamingResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLFastStreamingResult.h
+END
+SPMySQLKeepAliveTimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLKeepAliveTimer.h
+END
+SPMySQLStringAdditions.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLStringAdditions.m
+END
+SPMySQLFastStreamingResult.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3895/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLFastStreamingResult.m
+END
+SPMySQLKeepAliveTimer.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLKeepAliveTimer.m
+END
+SPMySQLUtilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLUtilities.h
+END
+SPMySQLConstants.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3631/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLConstants.h
+END
+SPMySQLArrayAdditions.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLArrayAdditions.h
+END
+SPMySQLResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLResult.h
+END
+SPMySQL.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3551/trunk/Frameworks/SPMySQLFramework/Source/SPMySQL.h
+END
+SPMySQLResult.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLResult.m
+END
+SPMySQLGeometryData.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLGeometryData.h
+END
+SPMySQL Private APIs.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3894/trunk/Frameworks/SPMySQLFramework/Source/SPMySQL%20Private%20APIs.h
+END
+SPMySQLStreamingResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLStreamingResult.h
+END
+SPMySQLGeometryData.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLGeometryData.m
+END
+SPMySQLConnectionDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLConnectionDelegate.h
+END
+SPMySQLFramework_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3511/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLFramework_Prefix.pch
+END
+SPMySQLStreamingResult.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3578/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLStreamingResult.m
+END
+SPMySQLConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3779/trunk/Frameworks/SPMySQLFramework/Source/SPMySQLConnection.h
+END
