@@ -7,18 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "SPMySQL.h"
+#import "CESSearchViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
-@property (assign) IBOutlet NSSearchField *searchBar;
-@property (assign) IBOutlet NSBox *clientNumberBox;
-@property (assign) IBOutlet NSTextField *clientNumberLabel;
-
-@property (assign) IBOutlet NSTableView *resultTableView;
-
-- (IBAction)textInputed:(id)sender;
+@property (nonatomic, strong) IBOutlet CESSearchViewController *cesSearchViewController;
 
 @end

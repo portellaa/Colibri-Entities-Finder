@@ -10,6 +10,8 @@
 
 @implementation AppDelegate
 
+@synthesize cesSearchViewController;
+
 - (void)dealloc
 {
     [super dealloc];
@@ -17,10 +19,13 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+	cesSearchViewController = [[CESSearchViewController alloc] initWithNibName:@"CESSearchViewController" bundle:nil];
+	CESDatabaseHandler *cesDBHandler = [[CESDatabaseHandler alloc] initWithDelegate:cesSearchViewController];
 	
+	[cesDBHandler connectToDatabase];
+	
+	[self.window setContentView: cesSearchViewController.view];
+	[cesSearchViewController.view setFrame: ((NSView*)self.window.contentView).bounds];
 }
 
-- (IBAction)textInputed:(id)sender {
-	
-}
 @end

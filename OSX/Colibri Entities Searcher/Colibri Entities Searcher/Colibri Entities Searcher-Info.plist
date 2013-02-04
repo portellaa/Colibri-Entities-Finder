@@ -30,5 +30,15 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>CESSQLHostname</key>
+	<string>127.0.0.1</string>
+	<key>CESSQLPort</key>
+	<integer>0</integer>
+	<key>CESSQLUsername</key>
+	<string>username</string>
+	<key>CESSQLPassword</key>
+	<string>password</string>
+	<key>CESSQLDatabase</key>
+	<string>database</string>
 </dict>
 </plist>
