@@ -46,9 +46,9 @@
 	
 	conn = [[SPMySQLConnection alloc] init];
 	
-	[conn setHost: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLHostname"]];
-	[conn setUsername: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLUsername"]];
-	[conn setPassword: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLPassword"]];
+	[conn setHost: [CESPreferenceManager getSQLServerHostname]];
+	[conn setUsername: [CESPreferenceManager getSQLServerUsername]];
+	[conn setPassword: [CESPreferenceManager getSQLServerPassword]];
 	[conn setUseSocket:NO];
 	[conn setUseSSL:NO];
 	
@@ -77,7 +77,7 @@
 	}
 	
 
-	if (![conn selectDatabase: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLDatabase"]]) {
+	if (![conn selectDatabase: [CESPreferenceManager getSQLDatabase]]) {
 		
 		NSLog(@"ERROR: Invalid database");
 		
@@ -96,17 +96,18 @@
 - (void) getResultsWithValue:(NSString*) value
 {
 	NSLog(@"Trying to get results!");
+	NSString *query = [self buildQueryWithValue:value];
 	
-	NSString *formedQuery = [NSString stringWithFormat:@SQLCUSTOMQUERY, [value stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-	NSLog(@"%@", formedQuery);
-	
-	[self performSelectorInBackground:@selector(performQuery:) withObject:formedQuery];
+	[self performSelectorInBackground:@selector(performQuery:) withObject:query];
 
 }
 
 - (void)getAllResults
 {
-	
+	NSLog(@"Trying to get all data from table");
+	NSString *query = [self buildQueryWithValue:nil];
+
+	[self performSelectorInBackground:@selector(performQuery:) withObject:query];
 }
 
 - (void) performQuery:(NSString *)query
@@ -118,9 +119,49 @@
 	
 	NSLog(@"Getted results. Number of rows: %llu", [results numberOfRows]);
 	
-	if ([results numberOfRows] > 0)
-		[self.delegate queryDidReturnResults:[results getAllRows]];
+//	if ([results numberOfRows] > 0)
+//		[self.delegate queryDidReturnResults:[results getAllRows]];
+	
+
 }
+
+
+- (NSString*) buildQueryWithValue:(NSString*)valueOrNil
+{
+	NSArray* tableFields = [CESPreferenceManager getSQLTableFields];
+	int i = 0;
+	NSString *formedQuery = @"SELECT ";
+	
+	for (NSString *field in tableFields)
+	{
+		formedQuery = [formedQuery stringByAppendingString:field];
+		i++;
+		if (i < [tableFields count])
+			formedQuery = [formedQuery stringByAppendingString:@", "];
+	}
+	formedQuery = [formedQuery stringByAppendingFormat:@" FROM %@", [CESPreferenceManager getSQLTable]];
+	
+	NSLog(@"Query without value: %@", formedQuery);
+	
+	if (valueOrNil != nil)
+	{
+		formedQuery = [formedQuery stringByAppendingString:@" WHERE "];
+		i = 0;
+		
+		for (NSString *field in tableFields)
+		{
+			formedQuery = [formedQuery stringByAppendingFormat:@"%@ LIKE '%%%@%%", field, valueOrNil];
+			i++;
+			if (i < [tableFields count])
+				formedQuery = [formedQuery stringByAppendingString:@" OR "];
+		}
+	}
+	
+	NSLog(@"Final Query: %@", formedQuery);
+	
+	return formedQuery;
+}
+
 
 - (void)showErrorWithTitle:(NSString *)title message:(NSString *)message
 {

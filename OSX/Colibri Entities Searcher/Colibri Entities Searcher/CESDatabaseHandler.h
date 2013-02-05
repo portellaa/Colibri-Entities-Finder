@@ -12,6 +12,7 @@
 
 #import <Foundation/Foundation.h>
 #import <SPMySQL/SPMySQL.h>
+#import "CESPreferenceManager.h"
 
 @protocol CESDatabaseConnectionDelegate;
 
@@ -36,6 +37,6 @@
 
 - (void) didConnectToDatabase;
 - (void) didFailWithError: (NSString*)error;
-- (void) queryDidReturnResults: (NSArray *)results;
+- (void) queryDidReturnResults: (SPMySQLResult *)results;
 
 @end

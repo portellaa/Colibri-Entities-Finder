@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import "CESDatabaseHandler.h"
+#import "CESPreferenceManager.h"
+#import <SPMySQL/SPMySQLResult.h>
 
 @interface CESSearchViewController : NSViewController<CESDatabaseConnectionDelegate, NSTableViewDelegate, NSTableViewDataSource>
+{
+	NSArray *tableHeaders, *nonFilteredResults, *showResults;
+	BOOL isConnected;
+}
 
 @property (assign) IBOutlet NSSearchField *cesSearchField;
 @property (assign) IBOutlet NSScrollView *cesSearchScrollView;

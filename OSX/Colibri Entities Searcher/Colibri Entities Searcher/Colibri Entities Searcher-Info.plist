@@ -40,5 +40,24 @@
 	<string>test</string>
 	<key>CESSQLDatabase</key>
 	<string>colibri</string>
+	<key>CESSQLTable</key>
+	<string>ENTIDADES</string>
+	<key>CESSQLTableFields</key>
+	<array>
+		<string>NUMERO</string>
+		<string>NOME</string>
+		<string>NIF</string>
+		<string>NIB</string>
+		<string>TELEFONE</string>
+		<string>TELEFONE2</string>
+		<string>TELEMOVEL</string>
+		<string>EMAIL</string>
+		<string>EMAIL2</string>
+		<string>FAX</string>
+		<string>NOMEBANCO</string>
+		<string>LOCALIDADE</string>
+		<string>MORADA</string>
+		<string>OBS</string>
+	</array>
 </dict>
 </plist>

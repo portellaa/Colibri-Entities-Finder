@@ -10,6 +10,7 @@
 		1B4B423B16BE8F2D000DC3D8 /* CESDatabaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B423A16BE8F2D000DC3D8 /* CESDatabaseHandler.m */; };
 		1B4B424216BE9586000DC3D8 /* CESSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B424016BE9585000DC3D8 /* CESSearchViewController.m */; };
 		1B4B424516BE95BD000DC3D8 /* CESSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B424416BE95BD000DC3D8 /* CESSearchViewController.xib */; };
+		1B5F630F16C1182100F62E7F /* CESPreferenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5F630E16C1182100F62E7F /* CESPreferenceManager.m */; };
 		1BEC6F4C16BDDCA20066D334 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */; };
 		1BEC6F5616BDDCA20066D334 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BEC6F5416BDDCA20066D334 /* InfoPlist.strings */; };
 		1BEC6F5816BDDCA20066D334 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BEC6F5716BDDCA20066D334 /* main.m */; };
@@ -35,6 +36,8 @@
 		1B4B423F16BE9585000DC3D8 /* CESSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CESSearchViewController.h; sourceTree = "<group>"; };
 		1B4B424016BE9585000DC3D8 /* CESSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CESSearchViewController.m; sourceTree = "<group>"; };
 		1B4B424416BE95BD000DC3D8 /* CESSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CESSearchViewController.xib; path = Interfaces/CESSearchViewController.xib; sourceTree = "<group>"; };
+		1B5F630D16C1182100F62E7F /* CESPreferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CESPreferenceManager.h; sourceTree = "<group>"; };
+		1B5F630E16C1182100F62E7F /* CESPreferenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CESPreferenceManager.m; sourceTree = "<group>"; };
 		1BEC6F4816BDDCA20066D334 /* Colibri Entities Searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colibri Entities Searcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1BEC6F4E16BDDCA20066D334 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -187,6 +190,8 @@
 				1BEC6F5E16BDDCA20066D334 /* AppDelegate.m */,
 				1B4B423E16BE9401000DC3D8 /* Interfaces */,
 				1BEC6F5216BDDCA20066D334 /* Supporting Files */,
+				1B5F630D16C1182100F62E7F /* CESPreferenceManager.h */,
+				1B5F630E16C1182100F62E7F /* CESPreferenceManager.m */,
 			);
 			path = "Colibri Entities Searcher";
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				1BEC6F5F16BDDCA20066D334 /* AppDelegate.m in Sources */,
 				1B4B423B16BE8F2D000DC3D8 /* CESDatabaseHandler.m in Sources */,
 				1B4B424216BE9586000DC3D8 /* CESSearchViewController.m in Sources */,
+				1B5F630F16C1182100F62E7F /* CESPreferenceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
