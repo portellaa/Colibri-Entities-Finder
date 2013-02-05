@@ -31,16 +31,21 @@
 	[self performSelectorInBackground:@selector(initiateMySQLConnection) withObject:nil];
 }
 
+- (void) disconnectFromDatabase
+{
+	if ([conn isConnected])
+		[conn disconnect];
+}
+
 /**
  * Initiates the core of the MySQL connection process on a background thread.
  */
 - (void)initiateMySQLConnection
 {
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	NSLog(@"Initiating connection to database...");
 	
 	conn = [[SPMySQLConnection alloc] init];
 	
-	//TODO: Use values stored on the preferences file
 	[conn setHost: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLHostname"]];
 	[conn setUsername: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLUsername"]];
 	[conn setPassword: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLPassword"]];
@@ -57,11 +62,26 @@
 	[conn setUseKeepAlive:YES];
 	[conn setKeepAliveInterval:10.0];
 	
+	NSLog(@"Attempting to connect to database...");
+	
 	// Connect
 	[conn connect];
 	
+	if (![conn isConnected])
+	{
+		NSLog(@"ERROR: Failed to connect");
+		
+		[self.delegate didFailWithError: [conn lastErrorMessage]];
+		
+		return;
+	}
+	
 
 	if (![conn selectDatabase: [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CESSQLDatabase"]]) {
+		
+		NSLog(@"ERROR: Invalid database");
+		
+		[self.delegate didFailWithError: [conn lastErrorMessage]];
 		
 		[conn release];
 		conn = nil;
@@ -69,9 +89,47 @@
 		return;
 	}
 	
+	[conn retain];
 	[self.delegate didConnectToDatabase];
+}
+
+- (void) getResultsWithValue:(NSString*) value
+{
+	NSLog(@"Trying to get results!");
 	
-	[pool release];
+	NSString *formedQuery = [NSString stringWithFormat:@SQLCUSTOMQUERY, [value stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	NSLog(@"%@", formedQuery);
+	
+	[self performSelectorInBackground:@selector(performQuery:) withObject:formedQuery];
+
+}
+
+- (void)getAllResults
+{
+	
+}
+
+- (void) performQuery:(NSString *)query
+{
+	NSLog(@"Querying database from results");
+	NSLog(@"Final query: %@", query);
+	
+	SPMySQLResult *results = [conn queryString:query];
+	
+	NSLog(@"Getted results. Number of rows: %llu", [results numberOfRows]);
+	
+	if ([results numberOfRows] > 0)
+		[self.delegate queryDidReturnResults:[results getAllRows]];
+}
+
+- (void)showErrorWithTitle:(NSString *)title message:(NSString *)message
+{
+	NSLog(@"Error on database connection:\nTitle: %@\nMessage: %@", title, message);
+}
+
+- (void)queryGaveError:(NSString *)error connection:(id)connection
+{
+	NSLog(@"ERROR: An error happens when trying to execute query.\nERROR: %@", error);
 }
 
 @end

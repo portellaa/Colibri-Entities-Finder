@@ -10,7 +10,7 @@
 
 @implementation AppDelegate
 
-@synthesize cesSearchViewController;
+@synthesize cesSearchViewController, cesDBHandler;
 
 - (void)dealloc
 {
@@ -19,13 +19,29 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	cesSearchViewController = [[CESSearchViewController alloc] initWithNibName:@"CESSearchViewController" bundle:nil];
-	CESDatabaseHandler *cesDBHandler = [[CESDatabaseHandler alloc] initWithDelegate:cesSearchViewController];
+	NSLog(@"Starting application...");
 	
+	cesSearchViewController = [[[CESSearchViewController alloc] initWithNibName:@"CESSearchViewController" bundle:nil] autorelease];
+	cesDBHandler = [[[CESDatabaseHandler alloc] initWithDelegate:cesSearchViewController] autorelease];
+	
+	NSLog(@"Trying to connect to database...");
 	[cesDBHandler connectToDatabase];
+	
+	[cesSearchViewController setCesDBConnHandler:cesDBHandler];
 	
 	[self.window setContentView: cesSearchViewController.view];
 	[cesSearchViewController.view setFrame: ((NSView*)self.window.contentView).bounds];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+	NSLog(@"Terminating application...");
+	[cesDBHandler disconnectFromDatabase];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+	return YES;
 }
 
 @end

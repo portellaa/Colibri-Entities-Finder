@@ -13,5 +13,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, strong) IBOutlet CESSearchViewController *cesSearchViewController;
+@property (assign) CESDatabaseHandler *cesDBHandler;
 
 @end
