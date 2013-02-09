@@ -37,13 +37,17 @@
 	for (NSTableColumn *col in [cesSearchTableView tableColumns])
 	{
 		NSLog(@"Table Field pos %d, %@", i, [tableHeaders objectAtIndex:i]);
-		[col setIdentifier: [NSString stringWithFormat:@"%d", i ]];
+		[col setIdentifier: [tableHeaders objectAtIndex:i]];
 		[col setHeaderCell:[[[NSTableHeaderCell alloc] initTextCell:[tableHeaders objectAtIndex:i]] autorelease]];
+		
+		[col bind:@"value" toObject:cesContentArray withKeyPath:[NSString stringWithFormat:@"arrangedObjects.%@", [tableHeaders objectAtIndex:i]] options:nil];
+		
 		i++;
 	}
 	
-	[cesSearchTableView setDataSource:self];
-	[cesSearchTableView setDelegate:self];
+//	[cesSearchTableView setDataSource:self];
+//	[cesSearchTableView setDelegate:self];
+	
 }
 
 
@@ -61,40 +65,11 @@
 	NSLog(@"Failed to connect.\nError: %@", error);
 }
 
-- (void) queryDidReturnResults:(SPMySQLResult *)results
+- (void) queryDidReturnResults:(NSArray *)results
 {
 	NSLog(@"Query returned %ld results", (unsigned long)[results count]);
-	nonFilteredResults = [NSArray arrayWithArray:results];
-	showResults = [NSArray arrayWithArray:results];
 
-	[nonFilteredResults retain];
-	[showResults retain];
-	
-	[cesSearchTableView reloadData];
-}
-
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
-{
-	return [showResults count];
-}
-
-- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
-{
-	NSInteger columnIndex;
-//	NSDictionary *tmpRow;
-	
-	if (tableView == cesSearchTableView)
-	{
-		NSLog(@"Row: %ld - Table Column: IDENTIFIER: %@", (long)row, [tableColumn identifier]);
-		columnIndex = [[tableColumn identifier] integerValue];
-//		tmpRow = [showResults objectAtIndex:row];
-//		
-//		NSLog(@"%@ ", [[[showResults objectAtIndex:row] allValues]);
-		
-		return [[showResults objectAtIndex:row] valueForKey:[tableColumn identifier]];
-	}
-	
-	return nil;
+	[cesContentArray addObjects:results];
 }
 
 - (IBAction)cesSearchFieldChanged:(id)sender {
@@ -107,6 +82,5 @@
 		
 		[cesDBConnHandler getResultsWithValue:[cesSearchField stringValue]];
 	}
-
 }
 @end

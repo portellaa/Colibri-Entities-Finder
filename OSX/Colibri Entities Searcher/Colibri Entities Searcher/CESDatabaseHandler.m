@@ -119,8 +119,11 @@
 	
 	NSLog(@"Getted results. Number of rows: %llu", [results numberOfRows]);
 	
-//	if ([results numberOfRows] > 0)
-//		[self.delegate queryDidReturnResults:[results getAllRows]];
+	if ([results numberOfRows] > 0)
+	{
+		[results setReturnDataAsStrings:YES];
+		[self.delegate queryDidReturnResults:[results getAllRows]];
+	}
 	
 
 }

@@ -27,8 +27,10 @@
 	NSLog(@"Trying to connect to database...");
 	[cesDBHandler connectToDatabase];
 	
+	NSLog(@"Setting database connection handler to view controller");
 	[cesSearchViewController setCesDBConnHandler:cesDBHandler];
 	
+	NSLog(@"Adding view to main window");
 	[self.window setContentView: cesSearchViewController.view];
 	[cesSearchViewController.view setFrame: ((NSView*)self.window.contentView).bounds];
 }

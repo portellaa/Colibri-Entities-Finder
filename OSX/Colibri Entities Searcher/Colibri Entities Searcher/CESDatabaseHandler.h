@@ -37,6 +37,6 @@
 
 - (void) didConnectToDatabase;
 - (void) didFailWithError: (NSString*)error;
-- (void) queryDidReturnResults: (SPMySQLResult *)results;
+- (void) queryDidReturnResults: (NSArray *)results;
 
 @end

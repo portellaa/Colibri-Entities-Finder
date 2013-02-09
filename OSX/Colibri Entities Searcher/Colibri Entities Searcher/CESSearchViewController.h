@@ -11,10 +11,13 @@
 #import "CESPreferenceManager.h"
 #import <SPMySQL/SPMySQLResult.h>
 
-@interface CESSearchViewController : NSViewController<CESDatabaseConnectionDelegate, NSTableViewDelegate, NSTableViewDataSource>
+@interface CESSearchViewController : NSViewController<CESDatabaseConnectionDelegate>
 {
-	NSArray *tableHeaders, *nonFilteredResults, *showResults;
+	NSArray *tableHeaders;
 	BOOL isConnected;
+	NSArray *nonFilteredResults, *showResults;
+	
+	IBOutlet NSArrayController *cesContentArray;
 }
 
 @property (assign) IBOutlet NSSearchField *cesSearchField;
