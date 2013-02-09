@@ -45,9 +45,6 @@
 		i++;
 	}
 	
-//	[cesSearchTableView setDataSource:self];
-//	[cesSearchTableView setDelegate:self];
-	
 }
 
 

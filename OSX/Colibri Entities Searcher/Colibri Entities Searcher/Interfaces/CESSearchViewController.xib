@@ -60,6 +60,7 @@
 										<int key="NSvFlags">268</int>
 										<string key="NSFrame">{{2, 6}, {61, 17}}</string>
 										<reference key="NSSuperview" ref="75178622"/>
+										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="213786098"/>
 										<string key="NSReuseIdentifierKey">_NS:1535</string>
 										<bool key="NSEnabled">YES</bool>
@@ -98,12 +99,14 @@
 								</array>
 								<string key="NSFrame">{{1, 1}, {65, 26}}</string>
 								<reference key="NSSuperview" ref="1004494174"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="768072673"/>
 								<string key="NSReuseIdentifierKey">_NS:11</string>
 							</object>
 						</array>
 						<string key="NSFrame">{{396, 226}, {67, 28}}</string>
 						<reference key="NSSuperview" ref="1005"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="75178622"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="NSOffsets">{0, 0}</string>
@@ -150,6 +153,7 @@
 										<array class="NSMutableArray" key="NSSubviews"/>
 										<string key="NSFrameSize">{438, 184}</string>
 										<reference key="NSSuperview" ref="67978075"/>
+										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="1047861819"/>
 										<string key="NSReuseIdentifierKey">_NS:13</string>
 										<bool key="NSEnabled">YES</bool>
@@ -160,6 +164,7 @@
 											<int key="NSvFlags">256</int>
 											<string key="NSFrameSize">{438, 17}</string>
 											<reference key="NSSuperview" ref="877939639"/>
+											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="67978075"/>
 											<reference key="NSTableView" ref="211234921"/>
 										</object>
@@ -580,6 +585,7 @@
 								</array>
 								<string key="NSFrame">{{1, 17}, {438, 184}}</string>
 								<reference key="NSSuperview" ref="213786098"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="211234921"/>
 								<string key="NSReuseIdentifierKey">_NS:11</string>
 								<reference key="NSDocView" ref="211234921"/>
@@ -591,6 +597,7 @@
 								<int key="NSvFlags">-2147483392</int>
 								<string key="NSFrame">{{224, 17}, {15, 102}}</string>
 								<reference key="NSSuperview" ref="213786098"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="36016000"/>
 								<string key="NSReuseIdentifierKey">_NS:58</string>
 								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -603,6 +610,7 @@
 								<int key="NSvFlags">-2147483392</int>
 								<string key="NSFrame">{{1, 185}, {438, 16}}</string>
 								<reference key="NSSuperview" ref="213786098"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:60</string>
 								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -619,6 +627,7 @@
 								</array>
 								<string key="NSFrame">{{1, 0}, {438, 17}}</string>
 								<reference key="NSSuperview" ref="213786098"/>
+								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1038097201"/>
 								<reference key="NSDocView" ref="1038097201"/>
 								<reference key="NSBGColor" ref="901747161"/>
@@ -627,6 +636,7 @@
 						</array>
 						<string key="NSFrame">{{20, 20}, {440, 202}}</string>
 						<reference key="NSSuperview" ref="1005"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="877939639"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="NSsFlags">133682</int>
@@ -644,6 +654,7 @@
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{20, 230}, {367, 22}}</string>
 						<reference key="NSSuperview" ref="1005"/>
+						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="1004494174"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="NSEnabled">YES</bool>
@@ -698,6 +709,7 @@
 				</array>
 				<string key="NSFrameSize">{480, 272}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="870471446"/>
 				<string key="NSClassName">NSView</string>
 			</object>
@@ -776,6 +788,22 @@
 						<reference key="destination" ref="1000518506"/>
 					</object>
 					<int key="connectionID">110</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: selection.NUMERO</string>
+						<reference key="source" ref="768072673"/>
+						<reference key="destination" ref="1000518506"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="768072673"/>
+							<reference key="NSDestination" ref="1000518506"/>
+							<string key="NSLabel">value: selection.NUMERO</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">selection.NUMERO</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">113</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1467,9 +1495,73 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">110</int>
+			<int key="maxID">113</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">CESSearchViewController</string>
+					<string key="superclassName">NSViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">cesSearchFieldChanged:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">cesSearchFieldChanged:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">cesSearchFieldChanged:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="cesContentArray">NSArrayController</string>
+						<string key="cesSearchClientNumberField">NSTextField</string>
+						<string key="cesSearchField">NSSearchField</string>
+						<string key="cesSearchScrollView">NSScrollView</string>
+						<string key="cesSearchTableHeaderView">NSTableHeaderView</string>
+						<string key="cesSearchTableView">NSTableView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="cesContentArray">
+							<string key="name">cesContentArray</string>
+							<string key="candidateClassName">NSArrayController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cesSearchClientNumberField">
+							<string key="name">cesSearchClientNumberField</string>
+							<string key="candidateClassName">NSTextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cesSearchField">
+							<string key="name">cesSearchField</string>
+							<string key="candidateClassName">NSSearchField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cesSearchScrollView">
+							<string key="name">cesSearchScrollView</string>
+							<string key="candidateClassName">NSScrollView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cesSearchTableHeaderView">
+							<string key="name">cesSearchTableHeaderView</string>
+							<string key="candidateClassName">NSTableHeaderView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="cesSearchTableView">
+							<string key="name">cesSearchTableView</string>
+							<string key="candidateClassName">NSTableView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/CESSearchViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSLayoutConstraint</string>
+					<string key="superclassName">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/NSLayoutConstraint.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
