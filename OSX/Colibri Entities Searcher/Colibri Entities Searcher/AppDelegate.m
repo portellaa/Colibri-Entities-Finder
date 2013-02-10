@@ -10,7 +10,7 @@
 
 @implementation AppDelegate
 
-@synthesize cesSearchViewController, cesDBHandler;
+@synthesize cesSearchViewController, cesDBHandler, window;
 
 - (void)dealloc
 {
