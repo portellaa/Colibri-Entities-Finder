@@ -38,15 +38,15 @@
 		1B4B424416BE95BD000DC3D8 /* CESSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CESSearchViewController.xib; path = Interfaces/CESSearchViewController.xib; sourceTree = "<group>"; };
 		1B5F630D16C1182100F62E7F /* CESPreferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CESPreferenceManager.h; sourceTree = "<group>"; };
 		1B5F630E16C1182100F62E7F /* CESPreferenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CESPreferenceManager.m; sourceTree = "<group>"; };
-		1BEC6F4816BDDCA20066D334 /* Colibri Entities Searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colibri Entities Searcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEC6F4816BDDCA20066D334 /* Colibri Entities Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colibri Entities Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1BEC6F4E16BDDCA20066D334 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1BEC6F4F16BDDCA20066D334 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1BEC6F5016BDDCA20066D334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1BEC6F5316BDDCA20066D334 /* Colibri Entities Searcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colibri Entities Searcher-Info.plist"; sourceTree = "<group>"; };
+		1BEC6F5316BDDCA20066D334 /* Colibri Entities Finder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Colibri Entities Finder-Info.plist"; sourceTree = "<group>"; };
 		1BEC6F5516BDDCA20066D334 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1BEC6F5716BDDCA20066D334 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1BEC6F5916BDDCA20066D334 /* Colibri Entities Searcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colibri Entities Searcher-Prefix.pch"; sourceTree = "<group>"; };
+		1BEC6F5916BDDCA20066D334 /* Colibri Entities Finder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colibri Entities Finder-Prefix.pch"; sourceTree = "<group>"; };
 		1BEC6F5B16BDDCA20066D334 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		1BEC6F5D16BDDCA20066D334 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BEC6F5E16BDDCA20066D334 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		1BEC6F4916BDDCA20066D334 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BEC6F4816BDDCA20066D334 /* Colibri Entities Searcher.app */,
+				1BEC6F4816BDDCA20066D334 /* Colibri Entities Finder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,10 +199,10 @@
 		1BEC6F5216BDDCA20066D334 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1BEC6F5316BDDCA20066D334 /* Colibri Entities Searcher-Info.plist */,
+				1BEC6F5316BDDCA20066D334 /* Colibri Entities Finder-Info.plist */,
 				1BEC6F5416BDDCA20066D334 /* InfoPlist.strings */,
 				1BEC6F5716BDDCA20066D334 /* main.m */,
-				1BEC6F5916BDDCA20066D334 /* Colibri Entities Searcher-Prefix.pch */,
+				1BEC6F5916BDDCA20066D334 /* Colibri Entities Finder-Prefix.pch */,
 				1BEC6F5A16BDDCA20066D334 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -342,9 +342,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BEC6F4716BDDCA20066D334 /* Colibri Entities Searcher */ = {
+		1BEC6F4716BDDCA20066D334 /* Colibri Entities Finder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Searcher" */;
+			buildConfigurationList = 1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Finder" */;
 			buildPhases = (
 				1BEC6F4416BDDCA20066D334 /* Sources */,
 				1BEC6F4516BDDCA20066D334 /* Frameworks */,
@@ -354,9 +354,9 @@
 			);
 			dependencies = (
 			);
-			name = "Colibri Entities Searcher";
+			name = "Colibri Entities Finder";
 			productName = "Colibri Entities Searcher";
-			productReference = 1BEC6F4816BDDCA20066D334 /* Colibri Entities Searcher.app */;
+			productReference = 1BEC6F4816BDDCA20066D334 /* Colibri Entities Finder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -368,7 +368,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Brindigrafica;
 			};
-			buildConfigurationList = 1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Searcher" */;
+			buildConfigurationList = 1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Finder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -387,7 +387,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1BEC6F4716BDDCA20066D334 /* Colibri Entities Searcher */,
+				1BEC6F4716BDDCA20066D334 /* Colibri Entities Finder */,
 			);
 		};
 /* End PBXProject section */
@@ -530,8 +530,8 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Colibri Entities Searcher/Colibri Entities Searcher-Prefix.pch";
-				INFOPLIST_FILE = "Colibri Entities Searcher/Colibri Entities Searcher-Info.plist";
+				GCC_PREFIX_HEADER = "Colibri Entities Searcher/Colibri Entities Finder-Prefix.pch";
+				INFOPLIST_FILE = "Colibri Entities Searcher/Colibri Entities Finder-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -544,8 +544,8 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Colibri Entities Searcher/Colibri Entities Searcher-Prefix.pch";
-				INFOPLIST_FILE = "Colibri Entities Searcher/Colibri Entities Searcher-Info.plist";
+				GCC_PREFIX_HEADER = "Colibri Entities Searcher/Colibri Entities Finder-Prefix.pch";
+				INFOPLIST_FILE = "Colibri Entities Searcher/Colibri Entities Finder-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -555,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Searcher" */ = {
+		1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BEC6F6316BDDCA30066D334 /* Debug */,
@@ -564,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Searcher" */ = {
+		1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BEC6F6616BDDCA30066D334 /* Debug */,

@@ -42,7 +42,7 @@
 			</object>
 			<object class="NSCustomView" id="1005">
 				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
+				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="NSScrollView" id="213786098">
 						<reference key="NSNextResponder" ref="1005"/>
@@ -56,7 +56,7 @@
 										<reference key="NSNextResponder" ref="67978075"/>
 										<int key="NSvFlags">256</int>
 										<array class="NSMutableArray" key="NSSubviews"/>
-										<string key="NSFrameSize">{1241, 383}</string>
+										<string key="NSFrameSize">{1241, 410}</string>
 										<reference key="NSSuperview" ref="67978075"/>
 										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="1047861819"/>
@@ -512,7 +512,7 @@
 										<int key="NSTableViewGroupRowStyle">1</int>
 									</object>
 								</array>
-								<string key="NSFrame">{{1, 17}, {720, 383}}</string>
+								<string key="NSFrame">{{1, 17}, {720, 410}}</string>
 								<reference key="NSSuperview" ref="213786098"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="211234921"/>
@@ -537,9 +537,10 @@
 							<object class="NSScroller" id="36016000">
 								<reference key="NSNextResponder" ref="213786098"/>
 								<int key="NSvFlags">256</int>
-								<string key="NSFrame">{{1, 384}, {720, 16}}</string>
+								<string key="NSFrame">{{1, 411}, {720, 16}}</string>
 								<reference key="NSSuperview" ref="213786098"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:60</string>
 								<bool key="NSEnabled">YES</bool>
 								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
@@ -563,7 +564,7 @@
 								<int key="NScvFlags">4</int>
 							</object>
 						</array>
-						<string key="NSFrame">{{20, 20}, {722, 401}}</string>
+						<string key="NSFrame">{{20, 20}, {722, 428}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="877939639"/>
@@ -582,7 +583,7 @@
 					<object class="NSSearchField" id="870471446">
 						<reference key="NSNextResponder" ref="1005"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{20, 429}, {722, 22}}</string>
+						<string key="NSFrame">{{20, 456}, {722, 22}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="213786098"/>
@@ -644,7 +645,7 @@
 						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 					</object>
 				</array>
-				<string key="NSFrameSize">{762, 471}</string>
+				<string key="NSFrameSize">{762, 498}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="870471446"/>
