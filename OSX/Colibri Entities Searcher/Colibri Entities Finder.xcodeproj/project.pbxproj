@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				1BEC6F6A16BDF1650066D334 /* SPMySQLFramework */,
-				1BEC6F5116BDDCA20066D334 /* Colibri Entities Searcher */,
+				1BEC6F5116BDDCA20066D334 /* Colibri Entities Finder */,
 				1BEC6F4A16BDDCA20066D334 /* Frameworks */,
 				1BEC6F4916BDDCA20066D334 /* Products */,
 			);
@@ -180,7 +180,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		1BEC6F5116BDDCA20066D334 /* Colibri Entities Searcher */ = {
+		1BEC6F5116BDDCA20066D334 /* Colibri Entities Finder */ = {
 			isa = PBXGroup;
 			children = (
 				1B4B423716BE8EFC000DC3D8 /* DatabaseConnection */,
@@ -193,6 +193,7 @@
 				1B5F630D16C1182100F62E7F /* CESPreferenceManager.h */,
 				1B5F630E16C1182100F62E7F /* CESPreferenceManager.m */,
 			);
+			name = "Colibri Entities Finder";
 			path = "Colibri Entities Searcher";
 			sourceTree = "<group>";
 		};

@@ -46,7 +46,7 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="NSScrollView" id="213786098">
 						<reference key="NSNextResponder" ref="1005"/>
-						<int key="NSvFlags">268</int>
+						<int key="NSvFlags">18</int>
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="NSClipView" id="67978075">
 								<reference key="NSNextResponder" ref="213786098"/>
@@ -568,7 +568,6 @@
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="877939639"/>
-						<bool key="NSViewCanDrawConcurrently">YES</bool>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="NSsFlags">174770</int>
 						<reference key="NSVScroller" ref="1047861819"/>
@@ -582,12 +581,11 @@
 					</object>
 					<object class="NSSearchField" id="870471446">
 						<reference key="NSNextResponder" ref="1005"/>
-						<int key="NSvFlags">268</int>
+						<int key="NSvFlags">10</int>
 						<string key="NSFrame">{{20, 456}, {722, 22}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="213786098"/>
-						<bool key="NSViewCanDrawConcurrently">YES</bool>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<string key="NSAntiCompressionPriority">{250, 750}</string>
 						<bool key="NSEnabled">YES</bool>
@@ -640,7 +638,7 @@
 								<int key="NSPeriodicInterval">75</int>
 							</object>
 							<int key="NSMaximumRecents">255</int>
-							<bytes key="NSSearchFieldFlags">CAAAAA</bytes>
+							<bool key="NSSendsWholeSearchString">YES</bool>
 						</object>
 						<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 					</object>
@@ -649,7 +647,6 @@
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="870471446"/>
-				<bool key="NSViewCanDrawConcurrently">YES</bool>
 				<string key="NSClassName">NSView</string>
 			</object>
 			<object class="NSArrayController" id="700837067">
@@ -694,14 +691,6 @@
 						<reference key="destination" ref="211234921"/>
 					</object>
 					<int key="connectionID">44</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">cesSearchFieldChanged:</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="870471446"/>
-					</object>
-					<int key="connectionID">46</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -1071,7 +1060,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">279</int>
+			<int key="maxID">287</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1091,7 +1080,6 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="cesContentArray">NSArrayController</string>
-						<string key="cesSearchClientNumberField">NSTextField</string>
 						<string key="cesSearchField">NSSearchField</string>
 						<string key="cesSearchScrollView">NSScrollView</string>
 						<string key="cesSearchTableHeaderView">NSTableHeaderView</string>
@@ -1101,10 +1089,6 @@
 						<object class="IBToOneOutletInfo" key="cesContentArray">
 							<string key="name">cesContentArray</string>
 							<string key="candidateClassName">NSArrayController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="cesSearchClientNumberField">
-							<string key="name">cesSearchClientNumberField</string>
-							<string key="candidateClassName">NSTextField</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="cesSearchField">
 							<string key="name">cesSearchField</string>

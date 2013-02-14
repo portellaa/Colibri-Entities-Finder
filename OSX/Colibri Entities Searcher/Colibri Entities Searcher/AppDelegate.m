@@ -33,6 +33,8 @@
 	NSLog(@"Adding view to main window");
 	[self.window setContentView: cesSearchViewController.view];
 	[cesSearchViewController.view setFrame: ((NSView*)self.window.contentView).bounds];
+	
+//	[window setDelegate:cesSearchViewController];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification
@@ -41,9 +43,18 @@
 	[cesDBHandler disconnectFromDatabase];
 }
 
+- (NSSize)windowWillResize:(NSWindow *)sender toSize:(NSSize)frameSize
+{
+	NSLog(@"New size -> Width: %f | Height: %f", frameSize.width, frameSize.height);
+	
+	return  frameSize;
+}
+
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
 	return YES;
 }
+
+
 
 @end
