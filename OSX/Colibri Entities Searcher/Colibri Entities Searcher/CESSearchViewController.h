@@ -11,7 +11,7 @@
 #import "CESPreferenceManager.h"
 #import <SPMySQL/SPMySQLResult.h>
 
-@interface CESSearchViewController : NSViewController<CESDatabaseConnectionDelegate, NSWindowDelegate>
+@interface CESSearchViewController : NSViewController<CESDatabaseConnectionDelegate, NSTableViewDelegate>
 {
 	NSArray *tableHeaders;
 	BOOL isConnected;
@@ -28,5 +28,6 @@
 @property (retain) CESDatabaseHandler *cesDBConnHandler;
 
 - (IBAction)cesSearchFieldChanged:(id)sender;
+- (IBAction)tableClicked:(id)sender;
 
 @end

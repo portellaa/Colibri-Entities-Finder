@@ -24,10 +24,7 @@
 		[tableHeaders retain];
 		isConnected = NO;
 		
-		[[self view] setAutoresizesSubviews:YES];
-//		[[self view] setAutoresizingMask: (NSUInteger)self.view.frame.size.width | (NSUInteger)self.view.frame.size.height];
-//		NSLog(@"AutoResizingMask: %lu", (unsigned long)self.view.autoresizingMask);
-//		[[self view] setNeedsDisplay:YES];
+		[cesSearchTableView setAllowsMultipleSelection:NO];
 
     }
     
@@ -51,25 +48,13 @@
 		i++;
 	}
 	
-}
-
-- (NSSize)windowWillResize:(NSWindow *)sender toSize:(NSSize)frameSize
-{
-	NSLog(@"New size -> Width: %f | Height: %f", frameSize.width, frameSize.height);
-	NSLog(@"Frame size -> Width: %f | Height: %f", self.view.frame.size.width, self.view.frame.size.height);
-	NSLog(@"Bounds size -> Width: %f | Height: %f", self.view.bounds.size.width, self.view.bounds.size.height);
+	[cesSearchTableView setDelegate:self];
 	
-//	[[self view] setBoundsSize:frameSize];
-//	[[self view] setFrameSize:frameSize];
-	
-	return  frameSize;
 }
 
 - (void)didConnectToDatabase
 {
 	NSLog(@"Connected to database");
-	[cesSearchField setEnabled:YES];
-	isConnected = YES;
 	
 	[cesDBConnHandler getAllResults];
 }
@@ -84,13 +69,49 @@
 	NSLog(@"Query returned %ld results", (unsigned long)[results count]);
 	
 	nonFilteredResults = [NSArray arrayWithArray:results];
+	[nonFilteredResults retain];
 
 	[cesContentArray addObjects:nonFilteredResults];
+	[cesSearchTableView setEnabled:YES];
+	[cesSearchField setEnabled:YES];
+	
+	[cesSearchField becomeFirstResponder];
+	
+	[cesSearchTableView deselectAll:cesSearchTableView];
 }
+
+
 
 - (IBAction)cesSearchFieldChanged:(id)sender {
 	
 	NSLog(@"Text changed");
+}
+
+- (IBAction)tableClicked:(id)sender {
+	NSLog(@"Index clicked");
+	
+}
+
+- (void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+	
+	NSLog(@"Table View Selected Index: %ld", [cesSearchTableView selectedRow]);
+	NSLog(@"Number of entries %ld", (unsigned long)[nonFilteredResults count]);
+	
+	NSPasteboard *clipboard = [NSPasteboard generalPasteboard];
+	
+	NSDictionary *dictIndex = [nonFilteredResults objectAtIndex:[cesSearchTableView selectedRow]];
+	
+	NSArray *clipboardObjects = [NSArray arrayWithObject:[dictIndex valueForKey:@"NUMERO"]];
+	
+	NSLog(@"Selected client: %@", [clipboardObjects objectAtIndex:0]);
+	
+	[clipboard clearContents];
+	
+	BOOL result = [clipboard writeObjects: clipboardObjects];
+	
+	NSLog(@"Copied? %c", (BOOL)result);
+	
 }
 
 @end

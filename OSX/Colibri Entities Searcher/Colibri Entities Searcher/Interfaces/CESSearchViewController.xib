@@ -46,7 +46,7 @@
 				<array class="NSMutableArray" key="NSSubviews">
 					<object class="NSScrollView" id="213786098">
 						<reference key="NSNextResponder" ref="1005"/>
-						<int key="NSvFlags">18</int>
+						<int key="NSvFlags">274</int>
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="NSClipView" id="67978075">
 								<reference key="NSNextResponder" ref="213786098"/>
@@ -62,7 +62,6 @@
 										<reference key="NSNextKeyView" ref="1047861819"/>
 										<bool key="NSViewCanDrawConcurrently">YES</bool>
 										<string key="NSReuseIdentifierKey">_NS:13</string>
-										<bool key="NSEnabled">YES</bool>
 										<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 										<bool key="NSControlAllowsExpansionToolTips">YES</bool>
 										<object class="NSTableHeaderView" key="NSHeaderView" id="1038097201">
@@ -88,7 +87,7 @@
 												<double key="NSMinWidth">74</double>
 												<double key="NSMaxWidth">74</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<object class="NSFont" key="NSSupport" id="26">
@@ -111,7 +110,7 @@
 													</object>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="1030192226">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<object class="NSFont" key="NSSupport" id="544809870">
@@ -146,7 +145,7 @@
 												<double key="NSMinWidth">150</double>
 												<double key="NSMaxWidth">400</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -154,7 +153,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="584417929">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -172,7 +171,7 @@
 												<double key="NSMinWidth">80</double>
 												<double key="NSMaxWidth">80</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -188,7 +187,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="258021932">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -206,7 +205,7 @@
 												<double key="NSMinWidth">95</double>
 												<double key="NSMaxWidth">200</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -214,7 +213,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="736180387">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -232,7 +231,7 @@
 												<double key="NSMinWidth">80</double>
 												<double key="NSMaxWidth">80</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -240,7 +239,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="552074084">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -258,7 +257,7 @@
 												<double key="NSMinWidth">80</double>
 												<double key="NSMaxWidth">80</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -266,7 +265,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="1052506787">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -284,7 +283,7 @@
 												<double key="NSMinWidth">80</double>
 												<double key="NSMaxWidth">80</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -292,7 +291,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="941278993">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -310,7 +309,7 @@
 												<double key="NSMinWidth">100</double>
 												<double key="NSMaxWidth">300</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -318,7 +317,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="310938511">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -336,7 +335,7 @@
 												<double key="NSMinWidth">100</double>
 												<double key="NSMaxWidth">300</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -344,7 +343,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="689597403">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -362,7 +361,7 @@
 												<double key="NSMinWidth">10</double>
 												<double key="NSMaxWidth">3.4028234663852886e+38</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -370,7 +369,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="72279610">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -388,7 +387,7 @@
 												<double key="NSMinWidth">50</double>
 												<double key="NSMaxWidth">100</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -396,7 +395,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="194067185">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -414,7 +413,7 @@
 												<double key="NSMinWidth">100</double>
 												<double key="NSMaxWidth">300</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -422,7 +421,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="461605528">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -440,7 +439,7 @@
 												<double key="NSMinWidth">100</double>
 												<double key="NSMaxWidth">300</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -448,7 +447,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="507926214">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -466,7 +465,7 @@
 												<double key="NSMinWidth">100</double>
 												<double key="NSMaxWidth">300</double>
 												<object class="NSTableHeaderCell" key="NSHeaderCell">
-													<int key="NSCellFlags">75497536</int>
+													<int key="NSCellFlags">612368448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents"/>
 													<reference key="NSSupport" ref="26"/>
@@ -474,7 +473,7 @@
 													<reference key="NSTextColor" ref="670757083"/>
 												</object>
 												<object class="NSTextFieldCell" key="NSDataCell" id="405281574">
-													<int key="NSCellFlags">337641536</int>
+													<int key="NSCellFlags">874512448</int>
 													<int key="NSCellFlags2">2048</int>
 													<string key="NSContents">Text Cell</string>
 													<reference key="NSSupport" ref="544809870"/>
@@ -501,7 +500,7 @@
 											</object>
 										</object>
 										<double key="NSRowHeight">17</double>
-										<int key="NSTvFlags">-1025474560</int>
+										<int key="NSTvFlags">-757039104</int>
 										<reference key="NSDelegate"/>
 										<reference key="NSDataSource"/>
 										<int key="NSColumnAutoresizingStyle">1</int>
@@ -568,6 +567,7 @@
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="877939639"/>
+						<bool key="NSViewCanDrawConcurrently">YES</bool>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<int key="NSsFlags">174770</int>
 						<reference key="NSVScroller" ref="1047861819"/>
@@ -651,9 +651,6 @@
 			</object>
 			<object class="NSArrayController" id="700837067">
 				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
-				<bool key="NSAvoidsEmptySelection">YES</bool>
-				<bool key="NSPreservesSelection">YES</bool>
-				<bool key="NSSelectsInsertedObjects">YES</bool>
 				<bool key="NSFilterRestrictsInsertion">YES</bool>
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
@@ -1060,24 +1057,27 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">287</int>
+			<int key="maxID">288</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
 					<string key="className">CESSearchViewController</string>
 					<string key="superclassName">NSViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">cesSearchFieldChanged:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">cesSearchFieldChanged:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="cesSearchFieldChanged:">id</string>
+						<string key="tableClicked:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="cesSearchFieldChanged:">
 							<string key="name">cesSearchFieldChanged:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+						<object class="IBActionInfo" key="tableClicked:">
+							<string key="name">tableClicked:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="cesContentArray">NSArrayController</string>
 						<string key="cesSearchField">NSSearchField</string>
