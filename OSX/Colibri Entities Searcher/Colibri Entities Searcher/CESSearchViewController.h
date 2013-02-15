@@ -27,7 +27,4 @@
 
 @property (retain) CESDatabaseHandler *cesDBConnHandler;
 
-- (IBAction)cesSearchFieldChanged:(id)sender;
-- (IBAction)tableClicked:(id)sender;
-
 @end

@@ -81,17 +81,6 @@
 }
 
 
-
-- (IBAction)cesSearchFieldChanged:(id)sender {
-	
-	NSLog(@"Text changed");
-}
-
-- (IBAction)tableClicked:(id)sender {
-	NSLog(@"Index clicked");
-	
-}
-
 - (void)tableViewSelectionDidChange:(NSNotification *)notification
 {
 	
