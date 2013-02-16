@@ -85,21 +85,27 @@
 {
 	
 	NSLog(@"Table View Selected Index: %ld", [cesSearchTableView selectedRow]);
-	NSLog(@"Number of entries %ld", (unsigned long)[nonFilteredResults count]);
 	
-	NSPasteboard *clipboard = [NSPasteboard generalPasteboard];
+	if ([cesSearchTableView selectedRow] < 0)
+	{
+		NSLog(@"Invalid index value");
+		return ;
+	}
 	
-	NSDictionary *dictIndex = [nonFilteredResults objectAtIndex:[cesSearchTableView selectedRow]];
-	
+
+	NSDictionary *dictIndex = [[cesContentArray arrangedObjects] objectAtIndex:[cesSearchTableView selectedRow]];
 	NSArray *clipboardObjects = [NSArray arrayWithObject:[dictIndex valueForKey:@"NUMERO"]];
+
+	NSPasteboard *clipboard = [NSPasteboard generalPasteboard];
+	[clipboard clearContents];
 	
 	NSLog(@"Selected client: %@", [clipboardObjects objectAtIndex:0]);
 	
-	[clipboard clearContents];
-	
 	BOOL result = [clipboard writeObjects: clipboardObjects];
 	
-	NSLog(@"Copied? %c", (BOOL)result);
+	if (result)
+		NSLog(@"Copied? %c", (BOOL)result);
+	else NSLog(@"Not Copied");
 	
 }
 

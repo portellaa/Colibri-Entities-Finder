@@ -718,13 +718,13 @@
 							<string key="NSKeyPath">filterPredicate</string>
 							<dictionary key="NSOptions">
 								<string key="NSDisplayName">predicate</string>
-								<string key="NSPredicateFormat">NUMERO contains[c] $value OR NOME CONTAINS[c] $value OR NIF contains $value OR NIB contains $value OR TELEFONE contains $value OR TELEFONE2 contains $value OR TELEMOVEL contains $value OR EMAIL contains $value OR EMAIL2 contains $value OR FAX contains $value OR NOMEBANCO contains $value OR LOCALIDADE contains $value OR MORADA contains $value OR OBS contains $value</string>
+								<string key="NSPredicateFormat">NUMERO contains[c] $value OR NOME CONTAINS[c] $value OR NIF contains $value OR NIB contains[c] $value OR TELEFONE contains[c] $value OR TELEFONE2 contains[c] $value OR TELEMOVEL contains[c] $value OR EMAIL contains[c] $value OR EMAIL2 contains[c] $value OR FAX contains[c] $value OR NOMEBANCO contains[c] $value OR LOCALIDADE contains[c] $value OR MORADA contains[c] $value OR OBS contains[c] $value</string>
 								<boolean value="YES" key="NSValidatesImmediately"/>
 							</dictionary>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">289</int>
+					<int key="connectionID">290</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1057,7 +1057,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">289</int>
+			<int key="maxID">290</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
