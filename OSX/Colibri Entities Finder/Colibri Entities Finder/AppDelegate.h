@@ -15,4 +15,6 @@
 @property (nonatomic, strong) IBOutlet CESSearchViewController *cesSearchViewController;
 @property (assign) CESDatabaseHandler *cesDBHandler;
 
+- (IBAction)openPreferences:(id)sender;
+
 @end

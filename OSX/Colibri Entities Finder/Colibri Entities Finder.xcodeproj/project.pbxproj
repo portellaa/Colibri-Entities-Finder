@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B3201A81701F9CC006C18F9 /* build-mysql-client.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1B3201631701F9CC006C18F9 /* build-mysql-client.sh */; };
+		1B3201A91701F9CC006C18F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B3201641701F9CC006C18F9 /* InfoPlist.strings */; };
+		1B3201AB1701F9CC006C18F9 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1B3201711701F9CC006C18F9 /* Readme.txt */; };
+		1B3201AC1701F9CC006C18F9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B3201731701F9CC006C18F9 /* Info.plist */; };
+		1B3201C31701FA24006C18F9 /* SPMySQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3201C21701F9CD006C18F9 /* SPMySQL.framework */; };
+		1B320256170210FE006C18F9 /* CESSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B320255170210FE006C18F9 /* CESSearchViewController.xib */; };
+		1B32FFDA1701CFB4006C18F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B32FF7D1701CFB4006C18F9 /* AppDelegate.m */; };
+		1B32FFDB1701CFB4006C18F9 /* CESDatabaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B32FF7F1701CFB4006C18F9 /* CESDatabaseHandler.m */; };
+		1B32FFDC1701CFB4006C18F9 /* CESPreferenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B32FF811701CFB4006C18F9 /* CESPreferenceManager.m */; };
+		1B32FFDD1701CFB4006C18F9 /* CESPreferencesPanelWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B32FF831701CFB4006C18F9 /* CESPreferencesPanelWindowController.m */; };
+		1B32FFDE1701CFB4006C18F9 /* CESPreferencesPanelWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B32FF841701CFB4006C18F9 /* CESPreferencesPanelWindowController.xib */; };
+		1B32FFDF1701CFB4006C18F9 /* CESSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B32FF861701CFB4006C18F9 /* CESSearchViewController.m */; };
+		1B32FFE11701CFB4006C18F9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1B32FF8A1701CFB4006C18F9 /* Credits.rtf */; };
+		1B32FFE21701CFB4006C18F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B32FF8C1701CFB4006C18F9 /* InfoPlist.strings */; };
+		1B32FFE31701CFB4006C18F9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B32FF8E1701CFB4006C18F9 /* MainMenu.xib */; };
+		1B32FFFD1701CFB4006C18F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B32FFD91701CFB4006C18F9 /* main.m */; };
+		1BEC6F4C16BDDCA20066D334 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B3201C11701F9CD006C18F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B3201A51701F9CC006C18F9 /* SPMySQLFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = SPMySQL.framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B3201631701F9CC006C18F9 /* build-mysql-client.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "build-mysql-client.sh"; sourceTree = "<group>"; };
+		1B3201651701F9CC006C18F9 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B3201681701F9CC006C18F9 /* my_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_alloc.h; sourceTree = "<group>"; };
+		1B3201691701F9CC006C18F9 /* my_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_list.h; sourceTree = "<group>"; };
+		1B32016A1701F9CC006C18F9 /* mysql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql.h; sourceTree = "<group>"; };
+		1B32016B1701F9CC006C18F9 /* mysql_com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_com.h; sourceTree = "<group>"; };
+		1B32016C1701F9CC006C18F9 /* mysql_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_time.h; sourceTree = "<group>"; };
+		1B32016D1701F9CC006C18F9 /* mysql_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mysql_version.h; sourceTree = "<group>"; };
+		1B32016E1701F9CC006C18F9 /* typelib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typelib.h; sourceTree = "<group>"; };
+		1B3201701701F9CC006C18F9 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
+		1B3201711701F9CC006C18F9 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		1B3201731701F9CC006C18F9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3201751701F9CC006C18F9 /* SPMySQL Private APIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SPMySQL Private APIs.h"; sourceTree = "<group>"; };
+		1B3201761701F9CC006C18F9 /* SPMySQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQL.h; sourceTree = "<group>"; };
+		1B3201771701F9CC006C18F9 /* SPMySQLArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLArrayAdditions.h; sourceTree = "<group>"; };
+		1B3201791701F9CC006C18F9 /* Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversion.h; sourceTree = "<group>"; };
+		1B32017A1701F9CC006C18F9 /* Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversion.m; sourceTree = "<group>"; };
+		1B32017B1701F9CC006C18F9 /* Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Copying.h; sourceTree = "<group>"; };
+		1B32017C1701F9CC006C18F9 /* Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Copying.m; sourceTree = "<group>"; };
+		1B32017D1701F9CC006C18F9 /* Databases & Tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Databases & Tables.h"; sourceTree = "<group>"; };
+		1B32017E1701F9CC006C18F9 /* Databases & Tables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Databases & Tables.m"; sourceTree = "<group>"; };
+		1B32017F1701F9CC006C18F9 /* Delegate & Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Delegate & Proxy.h"; sourceTree = "<group>"; };
+		1B3201801701F9CC006C18F9 /* Delegate & Proxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Delegate & Proxy.m"; sourceTree = "<group>"; };
+		1B3201811701F9CC006C18F9 /* Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Encoding.h; sourceTree = "<group>"; };
+		1B3201821701F9CC006C18F9 /* Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Encoding.m; sourceTree = "<group>"; };
+		1B3201831701F9CC006C18F9 /* Locking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Locking.h; sourceTree = "<group>"; };
+		1B3201841701F9CC006C18F9 /* Locking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Locking.m; sourceTree = "<group>"; };
+		1B3201851701F9CC006C18F9 /* Max Packet Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Max Packet Size.h"; sourceTree = "<group>"; };
+		1B3201861701F9CC006C18F9 /* Max Packet Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Max Packet Size.m"; sourceTree = "<group>"; };
+		1B3201871701F9CC006C18F9 /* Ping & KeepAlive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ping & KeepAlive.h"; sourceTree = "<group>"; };
+		1B3201881701F9CC006C18F9 /* Ping & KeepAlive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ping & KeepAlive.m"; sourceTree = "<group>"; };
+		1B3201891701F9CC006C18F9 /* Querying & Preparation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Querying & Preparation.h"; sourceTree = "<group>"; };
+		1B32018A1701F9CC006C18F9 /* Querying & Preparation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Querying & Preparation.m"; sourceTree = "<group>"; };
+		1B32018B1701F9CC006C18F9 /* Server Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Server Info.h"; sourceTree = "<group>"; };
+		1B32018C1701F9CC006C18F9 /* Server Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Server Info.m"; sourceTree = "<group>"; };
+		1B32018D1701F9CC006C18F9 /* SPMySQLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLConnection.h; sourceTree = "<group>"; };
+		1B32018E1701F9CC006C18F9 /* SPMySQLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMySQLConnection.m; sourceTree = "<group>"; };
+		1B32018F1701F9CC006C18F9 /* SPMySQLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLConnectionDelegate.h; sourceTree = "<group>"; };
+		1B3201901701F9CC006C18F9 /* SPMySQLConnectionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLConnectionProxy.h; sourceTree = "<group>"; };
+		1B3201911701F9CC006C18F9 /* SPMySQLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLConstants.h; sourceTree = "<group>"; };
+		1B3201921701F9CC006C18F9 /* SPMySQLFastStreamingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLFastStreamingResult.h; sourceTree = "<group>"; };
+		1B3201931701F9CC006C18F9 /* SPMySQLFastStreamingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMySQLFastStreamingResult.m; sourceTree = "<group>"; };
+		1B3201941701F9CC006C18F9 /* SPMySQLFramework_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLFramework_Prefix.pch; sourceTree = "<group>"; };
+		1B3201951701F9CC006C18F9 /* SPMySQLGeometryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLGeometryData.h; sourceTree = "<group>"; };
+		1B3201961701F9CC006C18F9 /* SPMySQLGeometryData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMySQLGeometryData.m; sourceTree = "<group>"; };
+		1B3201971701F9CC006C18F9 /* SPMySQLKeepAliveTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLKeepAliveTimer.h; sourceTree = "<group>"; };
+		1B3201981701F9CC006C18F9 /* SPMySQLKeepAliveTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMySQLKeepAliveTimer.m; sourceTree = "<group>"; };
+		1B32019A1701F9CC006C18F9 /* Convenience Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Convenience Methods.h"; sourceTree = "<group>"; };
+		1B32019B1701F9CC006C18F9 /* Convenience Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Convenience Methods.m"; sourceTree = "<group>"; };
+		1B32019C1701F9CC006C18F9 /* Field Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Field Definitions.h"; sourceTree = "<group>"; };
+		1B32019D1701F9CC006C18F9 /* Field Definitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Field Definitions.m"; sourceTree = "<group>"; };
+		1B32019E1701F9CC006C18F9 /* SPMySQLResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLResult.h; sourceTree = "<group>"; };
+		1B32019F1701F9CC006C18F9 /* SPMySQLResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMySQLResult.m; sourceTree = "<group>"; };
+		1B3201A01701F9CC006C18F9 /* SPMySQLStreamingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLStreamingResult.h; sourceTree = "<group>"; };
+		1B3201A11701F9CC006C18F9 /* SPMySQLStreamingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMySQLStreamingResult.m; sourceTree = "<group>"; };
+		1B3201A21701F9CC006C18F9 /* SPMySQLStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLStringAdditions.h; sourceTree = "<group>"; };
+		1B3201A31701F9CC006C18F9 /* SPMySQLStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMySQLStringAdditions.m; sourceTree = "<group>"; };
+		1B3201A41701F9CC006C18F9 /* SPMySQLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMySQLUtilities.h; sourceTree = "<group>"; };
+		1B3201A51701F9CC006C18F9 /* SPMySQLFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SPMySQLFramework.xcodeproj; sourceTree = "<group>"; };
+		1B320255170210FE006C18F9 /* CESSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CESSearchViewController.xib; path = "Colibri Entities Finder/Interfaces/CESSearchViewController.xib"; sourceTree = SOURCE_ROOT; };
+		1B32FF7C1701CFB4006C18F9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Colibri Entities Finder/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		1B32FF7D1701CFB4006C18F9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Colibri Entities Finder/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		1B32FF7E1701CFB4006C18F9 /* CESDatabaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CESDatabaseHandler.h; path = "Colibri Entities Finder/CESDatabaseHandler.h"; sourceTree = SOURCE_ROOT; };
+		1B32FF7F1701CFB4006C18F9 /* CESDatabaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CESDatabaseHandler.m; path = "Colibri Entities Finder/CESDatabaseHandler.m"; sourceTree = SOURCE_ROOT; };
+		1B32FF801701CFB4006C18F9 /* CESPreferenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CESPreferenceManager.h; path = "Colibri Entities Finder/CESPreferenceManager.h"; sourceTree = SOURCE_ROOT; };
+		1B32FF811701CFB4006C18F9 /* CESPreferenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CESPreferenceManager.m; path = "Colibri Entities Finder/CESPreferenceManager.m"; sourceTree = SOURCE_ROOT; };
+		1B32FF821701CFB4006C18F9 /* CESPreferencesPanelWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CESPreferencesPanelWindowController.h; path = "Colibri Entities Finder/CESPreferencesPanelWindowController.h"; sourceTree = SOURCE_ROOT; };
+		1B32FF831701CFB4006C18F9 /* CESPreferencesPanelWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CESPreferencesPanelWindowController.m; path = "Colibri Entities Finder/CESPreferencesPanelWindowController.m"; sourceTree = SOURCE_ROOT; };
+		1B32FF841701CFB4006C18F9 /* CESPreferencesPanelWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CESPreferencesPanelWindowController.xib; path = "Colibri Entities Finder/CESPreferencesPanelWindowController.xib"; sourceTree = SOURCE_ROOT; };
+		1B32FF851701CFB4006C18F9 /* CESSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CESSearchViewController.h; path = "Colibri Entities Finder/CESSearchViewController.h"; sourceTree = SOURCE_ROOT; };
+		1B32FF861701CFB4006C18F9 /* CESSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CESSearchViewController.m; path = "Colibri Entities Finder/CESSearchViewController.m"; sourceTree = SOURCE_ROOT; };
+		1B32FF871701CFB4006C18F9 /* Colibri Entities Finder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Colibri Entities Finder-Info.plist"; path = "Colibri Entities Finder/Colibri Entities Finder-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1B32FF881701CFB4006C18F9 /* Colibri Entities Finder-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Colibri Entities Finder-Prefix.pch"; path = "Colibri Entities Finder/Colibri Entities Finder-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		1B32FF8B1701CFB4006C18F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
+		1B32FF8D1701CFB4006C18F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		1B32FF8F1701CFB4006C18F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
+		1B32FFD91701CFB4006C18F9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Colibri Entities Finder/main.m"; sourceTree = SOURCE_ROOT; };
+		1BEC6F4816BDDCA20066D334 /* Colibri Entities Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colibri Entities Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1BEC6F4E16BDDCA20066D334 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1BEC6F4F16BDDCA20066D334 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1BEC6F5016BDDCA20066D334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BEC6F4516BDDCA20066D334 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3201C31701FA24006C18F9 /* SPMySQL.framework in Frameworks */,
+				1BEC6F4C16BDDCA20066D334 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B3200011701D0B4006C18F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B320255170210FE006C18F9 /* CESSearchViewController.xib */,
+				1B32FF841701CFB4006C18F9 /* CESPreferencesPanelWindowController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1B3200021701D159006C18F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B32FF821701CFB4006C18F9 /* CESPreferencesPanelWindowController.h */,
+				1B32FF831701CFB4006C18F9 /* CESPreferencesPanelWindowController.m */,
+				1B32FF851701CFB4006C18F9 /* CESSearchViewController.h */,
+				1B32FF861701CFB4006C18F9 /* CESSearchViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1B3200031701D178006C18F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B32FF7C1701CFB4006C18F9 /* AppDelegate.h */,
+				1B32FF7D1701CFB4006C18F9 /* AppDelegate.m */,
+				1B32FF7E1701CFB4006C18F9 /* CESDatabaseHandler.h */,
+				1B32FF7F1701CFB4006C18F9 /* CESDatabaseHandler.m */,
+				1B32FF801701CFB4006C18F9 /* CESPreferenceManager.h */,
+				1B32FF811701CFB4006C18F9 /* CESPreferenceManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1B3201621701F9CC006C18F9 /* SPMySQLFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201631701F9CC006C18F9 /* build-mysql-client.sh */,
+				1B3201641701F9CC006C18F9 /* InfoPlist.strings */,
+				1B3201661701F9CC006C18F9 /* MySQL Client Libraries */,
+				1B3201711701F9CC006C18F9 /* Readme.txt */,
+				1B3201721701F9CC006C18F9 /* Resources */,
+				1B3201741701F9CC006C18F9 /* Source */,
+				1B3201A51701F9CC006C18F9 /* SPMySQLFramework.xcodeproj */,
+			);
+			name = SPMySQLFramework;
+			path = "Colibri Entities Finder/Frameworks/SPMySQLFramework";
+			sourceTree = "<group>";
+		};
+		1B3201661701F9CC006C18F9 /* MySQL Client Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201671701F9CC006C18F9 /* include */,
+				1B32016F1701F9CC006C18F9 /* lib */,
+			);
+			path = "MySQL Client Libraries";
+			sourceTree = "<group>";
+		};
+		1B3201671701F9CC006C18F9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201681701F9CC006C18F9 /* my_alloc.h */,
+				1B3201691701F9CC006C18F9 /* my_list.h */,
+				1B32016A1701F9CC006C18F9 /* mysql.h */,
+				1B32016B1701F9CC006C18F9 /* mysql_com.h */,
+				1B32016C1701F9CC006C18F9 /* mysql_time.h */,
+				1B32016D1701F9CC006C18F9 /* mysql_version.h */,
+				1B32016E1701F9CC006C18F9 /* typelib.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1B32016F1701F9CC006C18F9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201701701F9CC006C18F9 /* libmysqlclient.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		1B3201721701F9CC006C18F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201731701F9CC006C18F9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B3201741701F9CC006C18F9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201751701F9CC006C18F9 /* SPMySQL Private APIs.h */,
+				1B3201761701F9CC006C18F9 /* SPMySQL.h */,
+				1B3201771701F9CC006C18F9 /* SPMySQLArrayAdditions.h */,
+				1B3201781701F9CC006C18F9 /* SPMySQLConnection Categories */,
+				1B32018D1701F9CC006C18F9 /* SPMySQLConnection.h */,
+				1B32018E1701F9CC006C18F9 /* SPMySQLConnection.m */,
+				1B32018F1701F9CC006C18F9 /* SPMySQLConnectionDelegate.h */,
+				1B3201901701F9CC006C18F9 /* SPMySQLConnectionProxy.h */,
+				1B3201911701F9CC006C18F9 /* SPMySQLConstants.h */,
+				1B3201921701F9CC006C18F9 /* SPMySQLFastStreamingResult.h */,
+				1B3201931701F9CC006C18F9 /* SPMySQLFastStreamingResult.m */,
+				1B3201941701F9CC006C18F9 /* SPMySQLFramework_Prefix.pch */,
+				1B3201951701F9CC006C18F9 /* SPMySQLGeometryData.h */,
+				1B3201961701F9CC006C18F9 /* SPMySQLGeometryData.m */,
+				1B3201971701F9CC006C18F9 /* SPMySQLKeepAliveTimer.h */,
+				1B3201981701F9CC006C18F9 /* SPMySQLKeepAliveTimer.m */,
+				1B3201991701F9CC006C18F9 /* SPMySQLResult Categories */,
+				1B32019E1701F9CC006C18F9 /* SPMySQLResult.h */,
+				1B32019F1701F9CC006C18F9 /* SPMySQLResult.m */,
+				1B3201A01701F9CC006C18F9 /* SPMySQLStreamingResult.h */,
+				1B3201A11701F9CC006C18F9 /* SPMySQLStreamingResult.m */,
+				1B3201A21701F9CC006C18F9 /* SPMySQLStringAdditions.h */,
+				1B3201A31701F9CC006C18F9 /* SPMySQLStringAdditions.m */,
+				1B3201A41701F9CC006C18F9 /* SPMySQLUtilities.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1B3201781701F9CC006C18F9 /* SPMySQLConnection Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201791701F9CC006C18F9 /* Conversion.h */,
+				1B32017A1701F9CC006C18F9 /* Conversion.m */,
+				1B32017B1701F9CC006C18F9 /* Copying.h */,
+				1B32017C1701F9CC006C18F9 /* Copying.m */,
+				1B32017D1701F9CC006C18F9 /* Databases & Tables.h */,
+				1B32017E1701F9CC006C18F9 /* Databases & Tables.m */,
+				1B32017F1701F9CC006C18F9 /* Delegate & Proxy.h */,
+				1B3201801701F9CC006C18F9 /* Delegate & Proxy.m */,
+				1B3201811701F9CC006C18F9 /* Encoding.h */,
+				1B3201821701F9CC006C18F9 /* Encoding.m */,
+				1B3201831701F9CC006C18F9 /* Locking.h */,
+				1B3201841701F9CC006C18F9 /* Locking.m */,
+				1B3201851701F9CC006C18F9 /* Max Packet Size.h */,
+				1B3201861701F9CC006C18F9 /* Max Packet Size.m */,
+				1B3201871701F9CC006C18F9 /* Ping & KeepAlive.h */,
+				1B3201881701F9CC006C18F9 /* Ping & KeepAlive.m */,
+				1B3201891701F9CC006C18F9 /* Querying & Preparation.h */,
+				1B32018A1701F9CC006C18F9 /* Querying & Preparation.m */,
+				1B32018B1701F9CC006C18F9 /* Server Info.h */,
+				1B32018C1701F9CC006C18F9 /* Server Info.m */,
+			);
+			path = "SPMySQLConnection Categories";
+			sourceTree = "<group>";
+		};
+		1B3201991701F9CC006C18F9 /* SPMySQLResult Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1B32019A1701F9CC006C18F9 /* Convenience Methods.h */,
+				1B32019B1701F9CC006C18F9 /* Convenience Methods.m */,
+				1B32019C1701F9CC006C18F9 /* Field Definitions.h */,
+				1B32019D1701F9CC006C18F9 /* Field Definitions.m */,
+			);
+			path = "SPMySQLResult Categories";
+			sourceTree = "<group>";
+		};
+		1B3201A61701F9CC006C18F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B3201C21701F9CD006C18F9 /* SPMySQL.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B32FF891701CFB4006C18F9 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				1B32FF8A1701CFB4006C18F9 /* Credits.rtf */,
+				1B32FF8C1701CFB4006C18F9 /* InfoPlist.strings */,
+				1B32FF8E1701CFB4006C18F9 /* MainMenu.xib */,
+			);
+			name = en.lproj;
+			path = "Colibri Entities Finder/en.lproj";
+			sourceTree = SOURCE_ROOT;
+		};
+		1BEC6F3F16BDDCA20066D334 = {
+			isa = PBXGroup;
+			children = (
+				1B3201621701F9CC006C18F9 /* SPMySQLFramework */,
+				1BEC6F5116BDDCA20066D334 /* Colibri Entities Finder */,
+				1BEC6F4A16BDDCA20066D334 /* Frameworks */,
+				1BEC6F4916BDDCA20066D334 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BEC6F4916BDDCA20066D334 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F4816BDDCA20066D334 /* Colibri Entities Finder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BEC6F4A16BDDCA20066D334 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F4B16BDDCA20066D334 /* Cocoa.framework */,
+				1BEC6F4D16BDDCA20066D334 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BEC6F4D16BDDCA20066D334 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEC6F4E16BDDCA20066D334 /* AppKit.framework */,
+				1BEC6F4F16BDDCA20066D334 /* CoreData.framework */,
+				1BEC6F5016BDDCA20066D334 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1BEC6F5116BDDCA20066D334 /* Colibri Entities Finder */ = {
+			isa = PBXGroup;
+			children = (
+				1B3200031701D178006C18F9 /* Model */,
+				1B3200021701D159006C18F9 /* Controller */,
+				1B3200011701D0B4006C18F9 /* Views */,
+				1BEC6F5216BDDCA20066D334 /* Supporting Files */,
+			);
+			name = "Colibri Entities Finder";
+			path = "Colibri Entities Searcher";
+			sourceTree = "<group>";
+		};
+		1BEC6F5216BDDCA20066D334 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B32FF891701CFB4006C18F9 /* en.lproj */,
+				1B32FF871701CFB4006C18F9 /* Colibri Entities Finder-Info.plist */,
+				1B32FF881701CFB4006C18F9 /* Colibri Entities Finder-Prefix.pch */,
+				1B32FFD91701CFB4006C18F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BEC6F4716BDDCA20066D334 /* Colibri Entities Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Finder" */;
+			buildPhases = (
+				1BEC6F4416BDDCA20066D334 /* Sources */,
+				1BEC6F4516BDDCA20066D334 /* Frameworks */,
+				1BEC6F4616BDDCA20066D334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Colibri Entities Finder";
+			productName = "Colibri Entities Searcher";
+			productReference = 1BEC6F4816BDDCA20066D334 /* Colibri Entities Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BEC6F4016BDDCA20066D334 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Brindigrafica;
+			};
+			buildConfigurationList = 1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Finder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				English,
+			);
+			mainGroup = 1BEC6F3F16BDDCA20066D334;
+			productRefGroup = 1BEC6F4916BDDCA20066D334 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1B3201A61701F9CC006C18F9 /* Products */;
+					ProjectRef = 1B3201A51701F9CC006C18F9 /* SPMySQLFramework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1BEC6F4716BDDCA20066D334 /* Colibri Entities Finder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1B3201C21701F9CD006C18F9 /* SPMySQL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SPMySQL.framework;
+			remoteRef = 1B3201C11701F9CD006C18F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BEC6F4616BDDCA20066D334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B32FFDE1701CFB4006C18F9 /* CESPreferencesPanelWindowController.xib in Resources */,
+				1B32FFE11701CFB4006C18F9 /* Credits.rtf in Resources */,
+				1B32FFE21701CFB4006C18F9 /* InfoPlist.strings in Resources */,
+				1B32FFE31701CFB4006C18F9 /* MainMenu.xib in Resources */,
+				1B3201A81701F9CC006C18F9 /* build-mysql-client.sh in Resources */,
+				1B3201A91701F9CC006C18F9 /* InfoPlist.strings in Resources */,
+				1B3201AB1701F9CC006C18F9 /* Readme.txt in Resources */,
+				1B3201AC1701F9CC006C18F9 /* Info.plist in Resources */,
+				1B320256170210FE006C18F9 /* CESSearchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BEC6F4416BDDCA20066D334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B32FFDA1701CFB4006C18F9 /* AppDelegate.m in Sources */,
+				1B32FFDB1701CFB4006C18F9 /* CESDatabaseHandler.m in Sources */,
+				1B32FFDC1701CFB4006C18F9 /* CESPreferenceManager.m in Sources */,
+				1B32FFDD1701CFB4006C18F9 /* CESPreferencesPanelWindowController.m in Sources */,
+				1B32FFDF1701CFB4006C18F9 /* CESSearchViewController.m in Sources */,
+				1B32FFFD1701CFB4006C18F9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B3201641701F9CC006C18F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B3201651701F9CC006C18F9 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1B32FF8A1701CFB4006C18F9 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B32FF8B1701CFB4006C18F9 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1B32FF8C1701CFB4006C18F9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B32FF8D1701CFB4006C18F9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1B32FF8E1701CFB4006C18F9 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B32FF8F1701CFB4006C18F9 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BEC6F6316BDDCA30066D334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1BEC6F6416BDDCA30066D334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1BEC6F6616BDDCA30066D334 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Colibri Entities Finder/Colibri Entities Finder-Prefix.pch";
+				INFOPLIST_FILE = "Colibri Entities Finder/Colibri Entities Finder-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Colibri Entities Finder/Frameworks/SPMySQLFramework/MySQL Client Libraries/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1BEC6F6716BDDCA30066D334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Colibri Entities Finder/Colibri Entities Finder-Prefix.pch";
+				INFOPLIST_FILE = "Colibri Entities Finder/Colibri Entities Finder-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Colibri Entities Finder/Frameworks/SPMySQLFramework/MySQL Client Libraries/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BEC6F4316BDDCA20066D334 /* Build configuration list for PBXProject "Colibri Entities Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEC6F6316BDDCA30066D334 /* Debug */,
+				1BEC6F6416BDDCA30066D334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BEC6F6516BDDCA30066D334 /* Build configuration list for PBXNativeTarget "Colibri Entities Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BEC6F6616BDDCA30066D334 /* Debug */,
+				1BEC6F6716BDDCA30066D334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BEC6F4016BDDCA20066D334 /* Project object */;
+}
